@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&display=swap');
+
+/*#F72AF4 rosa       #D96C94*/
+
+*, html {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #FFD940, #F60CF4 );
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald, sans-serif;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+main {
+    margin: auto;
+}
+
+.container-start {
+    margin-top: 100px;
+    text-align: center;
+    height: 89vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.game-panel {
+    width: 50vw;
+    display: grid;
+    padding: 40px 0;
+    gap: 20px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 1fr;
+    border: 3px solid black ;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@media (max-width: 930px) {
+    .game-panel {
+        width: 50vw;
+        display: grid;
+        padding: 40px 0;
+        gap: 20px;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 1fr;
+        border: 3px solid black ;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+@media (max-width: 700px) {
+    .game-panel {
+        width: 80vw;
+        display: grid;
+        padding: 40px 0;
+        gap: 20px;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 1fr;
+        border: 3px solid black ;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+.start {
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    background-color: #05C7F2;
+    border: 10px double white;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+}
+
+.start a {
+    text-decoration: none;
+    color: white;
+}
+
+.game-panel img {
+    cursor: pointer;
+}
+
+.pair-cards {
+    filter: grayscale(75%);
+}
+
+.card {
+    transition: all 500ms ease-in-out;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #2196F3;
+    border: 2px solid black;
+}
